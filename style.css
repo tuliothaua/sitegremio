@@ -12,6 +12,38 @@ body {
   padding-bottom: 50px;
 }
 
+.titulo1 {
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-style: italic;
+  font-weight: bold;
+  
+  text-shadow: 3px 3px 50px white;
+}
+
+.letra {
+  display: inline-block;
+  font-weight: bold;
+  font-size: 36px;
+  animation: pulando 1s infinite alternate;
+}
+
+.azul {
+  color: blue;
+}
+
+.preto {
+  color: black;
+}
+
+.branco {
+  color: white;
+}
+
+@keyframes pulando {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(-8px); }
+}
+
 .container {
   max-width: 1200px;
   margin: 0 auto;
@@ -61,7 +93,26 @@ body {
   padding: 10px 0;
 }
 
-.nav a.current,
+.current:hover {
+  font-size: 20px;
+  animation: tremer 0.2s infinite;
+  transition: font-size 0.3 ease;
+  transform: scale(1.2);
+}
+
+.current {
+  font-weight: bold;
+  animation: rgbAnim 3s infinite;
+  transition: 0.5s;
+}
+
+@keyframes rgbAnim {
+  0%   { color: rgb(38, 0, 255); }   
+  33%  { color: rgb(0, 0, 0); }    
+  66%  { color: rgb(255, 255, 255); }    
+  100% { color: rgb(17, 0, 255); }    
+}
+
 .nav a:hover {
   color: #2b2dc0;
   font-weight: bold;
@@ -120,6 +171,4 @@ body {
     height: 50px;
     padding: 0px 50px 0px 10px;
     border-radius: 50%;
-    
-    
 }
