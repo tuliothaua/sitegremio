@@ -1,3 +1,4 @@
+/* INÍCIO DO INDEX.HTML */
 @import url('https://fonts.googleapis.com/css?family=Open+Sans');
 
 * {
@@ -8,8 +9,9 @@
 
 body {
   font-family: 'Open Sans', sans-serif;
-  color: #222;
+  color: var(--gremio-preto);
   padding-bottom: 50px;
+  background: linear-gradient(90deg, rgb(0, 0, 0), rgb(115, 146, 167), rgb(0, 0, 0));
 }
 
 .titulo1 {
@@ -101,6 +103,7 @@ body {
 }
 
 .current {
+  
   font-weight: bold;
   animation: rgbAnim 3s infinite;
   transition: 0.5s;
@@ -162,7 +165,7 @@ body {
 }
 
 .content p {
-  color: #555;
+  color: white;
   line-height: 30px;
   letter-spacing: 2.2px;
 }
@@ -172,3 +175,195 @@ body {
     padding: 0px 50px 0px 10px;
     border-radius: 50%;
 }
+
+
+button {
+    font-family: "Franklin Gothic Medium";
+    box-shadow: 5px 5px 20px black;
+    background: white; 
+    color: black;
+    border: none;
+    border-radius: 20px;
+    padding: 20px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background 0.3s ease, transform 0.2s ease;
+    
+}
+
+button:hover {
+    background: #525e63;
+    transform: scale(1.2);
+}
+
+
+footer {
+    font-family: "Franklin Gothic Medium";
+    font-style: italic;
+    background-color: black;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    color: blue;
+    text-align: center;
+    padding: 20px 0px;
+}
+
+/* FIM DO INDEX.HTML */
+
+/* INÍCIO DO LENDAS.HTML */
+:root {
+  --gremio-azul: #0099e5;
+  --gremio-preto: #000000;
+  --gremio-branco: #ffffff;
+}
+
+.lendasbody {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  color: var(--gremio-preto);
+  background: linear-gradient(135deg, var(--gremio-azul), var(--gremio-branco));
+  background-size: cover;
+}
+
+header {
+  background-color: rgba(0, 0, 0, 0.85);
+  color: var(--gremio-branco);
+  padding: 20px 0;
+  text-align: center;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+}
+
+header div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+
+header img {
+  height: 60px;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2em;
+  text-shadow: 1px 1px 2px var(--gremio-azul);
+}
+
+.container {
+  max-width: 900px;
+  margin: auto;
+  padding: 40px 20px;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: var(--gremio-branco);
+  text-shadow: 1px 1px 2px #000;
+}
+
+.card {
+  display: flex;
+  align-items: center;
+  background: var(--gremio-branco);
+  border-left: 8px solid var(--gremio-azul);
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  padding: 20px;
+  margin-bottom: 20px;
+  transition: transform 0.2s ease;
+}
+
+.card:hover {
+  transform: scale(1.02);
+}
+
+.card img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-right: 20px;
+  border: 3px solid var(--gremio-preto);
+  object-fit: cover;
+}
+
+.info h3 {
+  margin: 0;
+  font-size: 1.4em;
+  color: var(--gremio-preto);
+}
+
+.info p {
+  margin: 5px 0 0;
+  color: #333;
+}
+
+.back-link {
+  display: inline-block;
+  margin-top: 30px;
+  text-decoration: none;
+  padding: 12px 24px;
+  background-color: var(--gremio-preto);
+  color: var(--gremio-branco);
+  border-radius: 8px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+  margin-bottom: 50px;
+}
+
+.back-link:hover {
+  background-color: var(--gremio-azul);
+  color: var(--gremio-preto);
+}
+
+.footerlendas {
+  background-color: rgba(0,0,0,0.9);
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+}
+
+.footerlendas p {
+  margin: 0;
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+@media (max-width: 600px) {
+  .card {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .card img {
+    margin: 0 0 15px;
+  }
+}
+
+/* Imagens nos cards */
+.card-renato {
+  background-image: url('img/renato.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 150px; /* Ajuste para que a imagem de fundo apareça */
+}
+
+.card-danrlei {
+  background-image: url('img/danrlei.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 150px; /* Ajuste para que a imagem de fundo apareça */
+}
+
+.card-geromel {
+  background-image: url('img/geromel.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 150px; /* Ajuste para que a imagem de fundo apareça */
+}
+/*FIM DE LENDAS
