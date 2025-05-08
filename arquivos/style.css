@@ -18,7 +18,6 @@ body {
   font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   font-style: italic;
   font-weight: bold;
-  
   text-shadow: 3px 3px 50px white;
 }
 
@@ -44,6 +43,42 @@ body {
 @keyframes pulando {
   0% { transform: translateY(0); }
   100% { transform: translateY(-8px); }
+}
+
+#gifContainer1 {
+    position: relative;
+    display: inline-block;
+}
+
+#gifContainer1::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('/sitegremio/arquivos/gif/giphy.gif');
+    background-size: cover;
+    background-position: center top;
+    z-index: -1;
+    opacity: 0; 
+    border-radius: 40%;
+    box-shadow: 5px 5px 20px #ffffff48;
+    transition: opacity 1s ease-in-out; 
+}
+
+#gifContainer1.active::before {
+    opacity: 1;
+}
+
+#gifContainer1 img {
+    position: relative; 
+    z-index: 1; 
+}
+
+#gifContainer1 h1 {
+    position: relative; 
+    z-index: 1; 
 }
 
 .container {
@@ -117,12 +152,23 @@ body {
 }
 
 .nav a:hover {
-  color: #2b2dc0;
   font-weight: bold;
+  color: rgb(17, 0, 255);
+  transition: 0.5s;
+  
+}
+
+.titulogremio:hover {
+  font-weight: bold;
+  animation: rgbAnim 5s infinite;  
+  transition: transform 0.5s ease, filter 0.5s ease;  
+  filter: drop-shadow(0 0 20px #00a9e0) drop-shadow(0 0 20px #ffffff); 
+  cursor: pointer;  
+   transform: scale(1.5);
 }
 
 .hero {
-  background-image: url('../sitegremio/img/arena-do-gremio-por-dentro.jpg');
+  background-image: url('../arquivos/img/arena-do-gremio-por-dentro.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: bottom center;
@@ -174,8 +220,14 @@ body {
     height: 50px;
     padding: 0px 50px 0px 10px;
     border-radius: 50%;
+    transition: transform 0.4s ease, filter 0.4s ease;
+    cursor: pointer;
 }
 
+#gremio1:hover {
+    transform: scale(1.3);
+    filter: drop-shadow(0 0 10px #00a9e0) drop-shadow(0 0 20px #ffffff);
+}
 
 button {
     font-family: "Franklin Gothic Medium";
@@ -200,17 +252,27 @@ button:hover {
 footer {
     font-family: "Franklin Gothic Medium";
     font-style: italic;
-    background-color: black;
+    background-color: black; 
     position: fixed;
     bottom: 0;
     left: 0;
     width: 100%;
-    color: blue;
+    color: transparent; 
     text-align: center;
-    padding: 20px 0px;
+    padding: 20px 0;
 }
 
+footer a {
+    background: linear-gradient(135deg, #00A9E0, #003D73, #1D1D1B);
+    -webkit-background-clip: text; 
+    background-clip: text; 
+    color: transparent; 
+    text-decoration: none; 
+}
+
+
 /* FIM DO INDEX.HTML */
+
 
 /* INÍCIO DO LENDAS.HTML */
 :root {
@@ -224,7 +286,7 @@ footer {
   margin: 0;
   padding: 0;
   color: var(--gremio-preto);
-  background: linear-gradient(135deg, var(--gremio-azul), var(--gremio-branco));
+  background: linear-gradient(135deg, var(--gremio-azul), var(--gremio-branco), var(--gremio-preto));
   background-size: cover;
 }
 
@@ -311,8 +373,13 @@ h2 {
   color: var(--gremio-branco);
   border-radius: 8px;
   font-weight: bold;
-  transition: background-color 0.3s ease;
+  transition: background 0.3s ease, transform 0.2s ease;
   margin-bottom: 50px;
+}
+
+.back-link:hover {
+    background: #525e63;
+    transform: scale(1.2);
 }
 
 .back-link:hover {
@@ -345,25 +412,24 @@ h2 {
   }
 }
 
-/* Imagens nos cards */
 .card-renato {
   background-image: url('img/renato.jpg');
   background-size: cover;
   background-position: center;
-  height: 150px; /* Ajuste para que a imagem de fundo apareça */
+  height: 150px; 
 }
 
 .card-danrlei {
   background-image: url('img/danrlei.jpg');
   background-size: cover;
   background-position: center;
-  height: 150px; /* Ajuste para que a imagem de fundo apareça */
+  height: 150px; 
 }
 
 .card-geromel {
   background-image: url('img/geromel.jpg');
   background-size: cover;
   background-position: center;
-  height: 150px; /* Ajuste para que a imagem de fundo apareça */
+  height: 150px; 
 }
 /*FIM DE LENDAS
