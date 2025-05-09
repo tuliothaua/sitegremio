@@ -1,48 +1,57 @@
 /* INÍCIO DO INDEX.HTML */
-@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+@import url("https://fonts.googleapis.com/css?family=Open+Sans");
 
 * {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 body {
-  font-family: 'Open Sans', sans-serif;
-  color: var(--gremio-preto);
-  padding-bottom: 50px;
-  background: linear-gradient(90deg, rgb(0, 0, 0), rgb(115, 146, 167), rgb(0, 0, 0));
+    font-family: "Open Sans", sans-serif;
+    color: var(--gremio-preto);
+    padding-bottom: 50px;
+    background: linear-gradient(
+        90deg,
+        rgb(0, 0, 0),
+        rgb(115, 146, 167),
+        rgb(0, 0, 0)
+    );
 }
 
 .titulo1 {
-  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  font-style: italic;
-  font-weight: bold;
-  text-shadow: 3px 3px 50px white;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    font-style: italic;
+    font-weight: bold;
+    text-shadow: 3px 3px 50px white;
 }
 
 .letra {
-  display: inline-block;
-  font-weight: bold;
-  font-size: 36px;
-  animation: pulando 1s infinite alternate;
+    display: inline-block;
+    font-weight: bold;
+    font-size: 36px;
+    animation: pulando 1s infinite alternate;
 }
 
 .azul {
-  color: blue;
+    color: blue;
 }
 
 .preto {
-  color: black;
+    color: black;
 }
 
 .branco {
-  color: white;
+    color: white;
 }
 
 @keyframes pulando {
-  0% { transform: translateY(0); }
-  100% { transform: translateY(-8px); }
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-8px);
+    }
 }
 
 #gifContainer1 {
@@ -57,14 +66,14 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url('/sitegremio/arquivos/gif/giphy.gif');
+    background-image: url("/sitegremio/arquivos/gif/giphy.gif");
     background-size: cover;
     background-position: center top;
     z-index: -1;
-    opacity: 0; 
+    opacity: 0;
     border-radius: 40%;
     box-shadow: 5px 5px 20px #ffffff48;
-    transition: opacity 1s ease-in-out; 
+    transition: opacity 1s ease-in-out;
 }
 
 #gifContainer1.active::before {
@@ -72,148 +81,154 @@ body {
 }
 
 #gifContainer1 img {
-    position: relative; 
-    z-index: 1; 
+    position: relative;
+    z-index: 1;
 }
 
 #gifContainer1 h1 {
-    position: relative; 
-    z-index: 1; 
+    position: relative;
+    z-index: 1;
 }
 
 .container {
-  max-width: 1200px;
-  margin: 0 auto;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .nav {
-  position: fixed;
-  background-color: #222;
-  top: 0;
-  left: 0;
-  right: 0;
-  transition: all 0.3s ease-in-out;
+    position: fixed;
+    background-color: #222;
+    top: 0;
+    left: 0;
+    right: 0;
+    transition: all 0.3s ease-in-out;
 }
 
 .nav .container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px 0;
-  transition: all 0.3s ease-in-out;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    transition: all 0.3s ease-in-out;
 }
 
 .nav ul {
-  display: flex;
-  list-style-type: none;
-  align-items: center;
-  justify-content: center;
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+    justify-content: center;
 }
 
 .nav a {
-  color: #fff;
-  text-decoration: none;
-  padding: 7px 15px;
-  transition: all 0.3s ease-in-out;
+    color: #fff;
+    text-decoration: none;
+    padding: 7px 15px;
+    transition: all 0.3s ease-in-out;
 }
 
 .nav.active {
-  background-color: #fff;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+    background-color: #fff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
 }
 
 .nav.active a {
-  color: #000;
+    color: #000;
 }
 
 .nav.active .container {
-  padding: 10px 0;
+    padding: 10px 0;
 }
 
 .current:hover {
-  font-size: 20px;
-  animation: tremer 0.2s infinite;
-  transition: font-size 0.3 ease;
-  transform: scale(1.2);
+    font-size: 20px;
+    animation: tremer 0.2s infinite;
+    transition: font-size 0.3 ease;
+    transform: scale(1.2);
 }
 
 .current {
-  
-  font-weight: bold;
-  animation: rgbAnim 3s infinite;
-  transition: 0.5s;
+    font-weight: bold;
+    animation: rgbAnim 3s infinite;
+    transition: 0.5s;
 }
 
 @keyframes rgbAnim {
-  0%   { color: rgb(38, 0, 255); }   
-  33%  { color: rgb(0, 0, 0); }    
-  66%  { color: rgb(255, 255, 255); }    
-  100% { color: rgb(17, 0, 255); }    
+    0% {
+        color: rgb(38, 0, 255);
+    }
+    33% {
+        color: rgb(0, 0, 0);
+    }
+    66% {
+        color: rgb(255, 255, 255);
+    }
+    100% {
+        color: rgb(17, 0, 255);
+    }
 }
 
 .nav a:hover {
-  font-weight: bold;
-  color: rgb(17, 0, 255);
-  transition: 0.5s;
-  
+    font-weight: bold;
+    color: rgb(17, 0, 255);
+    transition: 0.5s;
 }
 
 .titulogremio:hover {
-  font-weight: bold;
-  animation: rgbAnim 5s infinite;  
-  transition: transform 0.5s ease, filter 0.5s ease;  
-  filter: drop-shadow(0 0 20px #00a9e0) drop-shadow(0 0 20px #ffffff); 
-  cursor: pointer;  
-   transform: scale(1.5);
+    font-weight: bold;
+    animation: rgbAnim 5s infinite;
+    transition: transform 0.5s ease, filter 0.5s ease;
+    filter: drop-shadow(0 0 20px #00a9e0) drop-shadow(0 0 20px #ffffff);
+    cursor: pointer;
+    transform: scale(1.5);
 }
 
 .hero {
-  background-image: url('../arquivos/img/arena-do-gremio-por-dentro.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: bottom center;
-  height: 100vh;
-  color: #fff;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  position: relative;
-  margin-bottom: 20px;
-  z-index: -2;
+    background-image: url("../arquivos/img/arena-do-gremio-por-dentro.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom center;
+    height: 100vh;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    margin-bottom: 20px;
+    z-index: -2;
 }
 
 .hero::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
-  z-index: -1;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: -1;
 }
 
 .hero h1 {
-  font-size: 46px;
-  margin: -20px 0 20px;
+    font-size: 46px;
+    margin: -20px 0 20px;
 }
 
 .hero p {
-  font-size: 20px;
-  letter-spacing: 1px;
+    font-size: 20px;
+    letter-spacing: 1px;
 }
 
 .content h2,
 .content h3 {
-  font-size: 150%;
-  margin: 20px 0;
+    font-size: 150%;
+    margin: 20px 0;
 }
 
 .content p {
-  color: white;
-  line-height: 30px;
-  letter-spacing: 2.2px;
+    color: white;
+    line-height: 30px;
+    letter-spacing: 2.2px;
 }
 
 #gremio1 {
@@ -232,7 +247,7 @@ body {
 button {
     font-family: "Franklin Gothic Medium";
     box-shadow: 5px 5px 20px black;
-    background: white; 
+    background: white;
     color: black;
     border: none;
     border-radius: 20px;
@@ -240,7 +255,6 @@ button {
     cursor: pointer;
     font-size: 14px;
     transition: background 0.3s ease, transform 0.2s ease;
-    
 }
 
 button:hover {
@@ -248,133 +262,137 @@ button:hover {
     transform: scale(1.2);
 }
 
-
 footer {
     font-family: "Franklin Gothic Medium";
     font-style: italic;
-    background-color: black; 
+    background-color: black;
     position: fixed;
     bottom: 0;
     left: 0;
     width: 100%;
-    color: transparent; 
+    color: transparent;
     text-align: center;
     padding: 20px 0;
 }
 
 footer a {
-    background: linear-gradient(135deg, #00A9E0, #003D73, #1D1D1B);
-    -webkit-background-clip: text; 
-    background-clip: text; 
-    color: transparent; 
-    text-decoration: none; 
+    background: linear-gradient(135deg, #00a9e0, #003d73, #1d1d1b);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    text-decoration: none;
 }
-
 
 /* FIM DO INDEX.HTML */
 
-
 /* INÍCIO DO LENDAS.HTML */
 :root {
-  --gremio-azul: #0099e5;
-  --gremio-preto: #000000;
-  --gremio-branco: #ffffff;
+    --gremio-azul: #0099e5;
+    --gremio-preto: #000000;
+    --gremio-branco: #ffffff;
 }
 
 .lendasbody {
-  font-family: 'Poppins', sans-serif;
-  margin: 0;
-  padding: 0;
-  color: var(--gremio-preto);
-  background: linear-gradient(135deg, var(--gremio-azul), var(--gremio-branco), var(--gremio-preto));
-  background-size: cover;
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    color: var(--gremio-preto);
+    background: linear-gradient(
+        135deg,
+        var(--gremio-azul),
+        var(--gremio-branco),
+        var(--gremio-preto)
+    );
+    background-size: cover;
 }
 
 header {
-  background-color: rgba(0, 0, 0, 0.85);
-  color: var(--gremio-branco);
-  padding: 20px 0;
-  text-align: center;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+    background-color: rgba(0, 0, 0, 0.85);
+    color: var(--gremio-branco);
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
 }
 
 header div {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
 }
 
 header img {
-  height: 60px;
+    height: 60px;
 }
 
 header h1 {
-  margin: 0;
-  font-size: 2em;
-  text-shadow: 1px 1px 2px var(--gremio-azul);
+    margin: 0;
+    font-size: 2em;
+    text-shadow: 1px 1px 2px var(--gremio-azul);
 }
 
 .container {
-  max-width: 900px;
-  margin: auto;
-  padding: 40px 20px;
+    max-width: 900px;
+    margin: auto;
+    padding: 40px 20px;
 }
 
 h2 {
-  text-align: center;
-  margin-bottom: 30px;
-  color: var(--gremio-branco);
-  text-shadow: 1px 1px 2px #000;
+    text-align: center;
+    margin-bottom: 30px;
+    color: var(--gremio-branco);
+    text-shadow: 1px 1px 2px #000;
 }
 
 .card {
-  display: flex;
-  align-items: center;
-  background: var(--gremio-branco);
-  border-left: 8px solid var(--gremio-azul);
-  border-radius: 12px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-  padding: 20px;
-  margin-bottom: 20px;
-  transition: transform 0.2s ease;
+    display: flex;
+    align-items: center;
+    background: var(--gremio-branco);
+    border-left: 8px solid var(--gremio-azul);
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    padding: 20px;
+    margin-bottom: 20px;
+    transition: transform 0.2s ease;
 }
 
 .card:hover {
-  transform: scale(1.02);
+    transform: scale(1.02);
 }
 
 .card img {
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-  margin-right: 20px;
-  border: 3px solid var(--gremio-preto);
-  object-fit: cover;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-right: 20px;
+    border: 3px solid var(--gremio-preto);
+    object-fit: cover;
 }
 
 .info h3 {
-  margin: 0;
-  font-size: 1.4em;
-  color: var(--gremio-preto);
+    margin: 0;
+    font-size: 1.4em;
+    color: var(--gremio-preto);
+    filter: drop-shadow(0 0 10px #fff);
 }
 
 .info p {
-  margin: 5px 0 0;
-  color: #333;
+    margin: 5px 0 0;
+    color: #fff;
+    filter: drop-shadow(0 0 10px #000);
 }
 
 .back-link {
-  display: inline-block;
-  margin-top: 30px;
-  text-decoration: none;
-  padding: 12px 24px;
-  background-color: var(--gremio-preto);
-  color: var(--gremio-branco);
-  border-radius: 8px;
-  font-weight: bold;
-  transition: background 0.3s ease, transform 0.2s ease;
-  margin-bottom: 50px;
+    display: inline-block;
+    margin-top: 30px;
+    text-decoration: none;
+    padding: 12px 24px;
+    background-color: var(--gremio-preto);
+    color: var(--gremio-branco);
+    border-radius: 8px;
+    font-weight: bold;
+    transition: background 0.3s ease, transform 0.2s ease;
+    margin-bottom: 50px;
 }
 
 .back-link:hover {
@@ -383,53 +401,57 @@ h2 {
 }
 
 .back-link:hover {
-  background-color: var(--gremio-azul);
-  color: var(--gremio-preto);
+    background-color: var(--gremio-azul);
+    color: var(--gremio-preto);
 }
 
 .footerlendas {
-  background-color: rgba(0,0,0,0.9);
-  color: white;
-  text-align: center;
-  padding: 20px;
-  margin-top: 40px;
+    background-color: rgba(0, 0, 0, 0.9);
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
 }
 
 .footerlendas p {
-  margin: 0;
-  font-weight: bold;
-  font-size: 1.2em;
+    margin: 0;
+    font-weight: bold;
+    font-size: 1.2em;
 }
 
 @media (max-width: 600px) {
-  .card {
-    flex-direction: column;
-    text-align: center;
-  }
+    .card {
+        flex-direction: column;
+        text-align: center;
+    }
 
-  .card img {
-    margin: 0 0 15px;
-  }
+    .card img {
+        margin: 0 0 15px;
+    }
 }
 
 .card-renato {
-  background-image: url('img/renato.jpg');
-  background-size: cover;
-  background-position: center;
-  height: 150px; 
+    background-image: url("/sitegremio/arquivos/img/renato.jpg");
+    background-size: cover;
+    background-position: center 30%;
+    height: 200px;
+    text-shadow: 1px 1px 3px #000;
 }
 
 .card-danrlei {
-  background-image: url('img/danrlei.jpg');
-  background-size: cover;
-  background-position: center;
-  height: 150px; 
+    background-image: url("/sitegremio/arquivos/img/danrlei.jpg");
+    background-size: cover;
+    background-position: center 40%;
+    height: 200px;
+    text-shadow: 1px 1px 3px #000;
 }
 
 .card-geromel {
-  background-image: url('img/geromel.jpg');
-  background-size: cover;
-  background-position: center;
-  height: 150px; 
+    background-image: url("/sitegremio/arquivos/img/geromel.jpg");
+    background-size: cover;
+    background-position: center 30%;
+    height: 200px;
+    text-shadow: 1px 1px 3px #000;
 }
-/*FIM DE LENDAS
+
+/*FIM DE LENDAS */
