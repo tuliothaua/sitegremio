@@ -173,6 +173,10 @@ body {
     transition: 0.5s;
 }
 
+.titulogremio {
+    transition: transform 0.4s ease, filter 0.4s ease;
+}
+
 .titulogremio:hover {
     font-weight: bold;
     animation: rgbAnim 5s infinite;
