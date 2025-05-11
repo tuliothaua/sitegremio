@@ -23,7 +23,7 @@ playButton.addEventListener("click", function () {
         playButton.textContent = "⏸️ PAUSAR HINO";
         insistiu = 0;
 
-        hero.style.backgroundImage = "url('/sitegremio/arquivos/gif/torcidagremio.gif')";
+        hero.style.backgroundImage = "url('/sitegremio/front-end/arquivos/gif/torcidagremio.gif')";
         hero.style.backgroundSize = "cover";
         hero.style.backgroundPosition = "center";
     } else {
@@ -37,7 +37,7 @@ playButton.addEventListener("click", function () {
             insistiu = 0;
 
             hero.style.backgroundImage =
-                "url('/sitegremio/arquivos/img/arena-do-gremio-por-dentro.jpg')";
+                "url('/sitegremio/front-end/arquivos/img/arena-do-gremio-por-dentro.jpg')";
 
             setTimeout(() => {
                 playButton.textContent = "♫ TOCAR HINO!";
