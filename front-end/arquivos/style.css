@@ -66,7 +66,7 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url("/sitegremio/arquivos/gif/giphy.gif");
+    background-image: url("/sitegremio/front-end/arquivos/gif/giphy.gif");
     background-size: cover;
     background-position: center top;
     z-index: -1;
@@ -435,7 +435,7 @@ h2 {
 }
 
 .card-renato {
-    background-image: url("/sitegremio/arquivos/img/renato.jpg");
+    background-image: url("/sitegremio/front-end/arquivos/img/renato.jpg");
     background-size: cover;
     background-position: center 30%;
     height: 200px;
@@ -443,7 +443,7 @@ h2 {
 }
 
 .card-danrlei {
-    background-image: url("/sitegremio/arquivos/img/danrlei.jpg");
+    background-image: url("/sitegremio/front-end/arquivos/img/danrlei.jpg");
     background-size: cover;
     background-position: center 40%;
     height: 200px;
@@ -451,7 +451,7 @@ h2 {
 }
 
 .card-geromel {
-    background-image: url("/sitegremio/arquivos/img/geromel.jpg");
+    background-image: url("/sitegremio/front-end/arquivos/img/geromel.jpg");
     background-size: cover;
     background-position: center 30%;
     height: 200px;
@@ -459,3 +459,5 @@ h2 {
 }
 
 /*FIM DE LENDAS */
+
+/* INÍCIO DO HISTORIA.HTML */
