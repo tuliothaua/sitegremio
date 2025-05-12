@@ -91,8 +91,9 @@ body {
 }
 
 .container {
-    max-width: 1200px;
-    margin: 0 auto;
+    max-width: 900px;
+    margin: auto;
+    padding: 40px 20px;
 }
 
 .nav {
@@ -335,7 +336,7 @@ header h1 {
     text-shadow: 1px 1px 2px var(--gremio-azul);
 }
 
-.container {
+.container-lendas {
     max-width: 900px;
     margin: auto;
     padding: 40px 20px;
@@ -386,7 +387,7 @@ h2 {
     filter: drop-shadow(0 0 10px #000);
 }
 
-.back-link {
+.back-link-lendas {
     display: inline-block;
     margin-top: 30px;
     text-decoration: none;
@@ -399,12 +400,12 @@ h2 {
     margin-bottom: 50px;
 }
 
-.back-link:hover {
+.back-link-lendas:hover {
     background: #525e63;
     transform: scale(1.2);
 }
 
-.back-link:hover {
+.back-link-lendas:hover {
     background-color: var(--gremio-azul);
     color: var(--gremio-preto);
 }
@@ -457,7 +458,145 @@ h2 {
     height: 200px;
     text-shadow: 1px 1px 3px #000;
 }
-
-/*FIM DE LENDAS */
+/* FIM DO LENDAS.HTML */
 
 /* INÍCIO DO HISTORIA.HTML */
+
+#historiabody {
+    font-family: "Open Sans", sans-serif;
+    color: #fff;
+    padding: 0 20px;
+}
+
+.container-historia {
+    max-width: 900px;
+    margin: auto;
+    padding: 40px 20px;
+    filter: drop-shadow(0 0 10px #00a9e0) drop-shadow(0 0 10px #ffffff);
+}
+
+h1, h2, h3, p {
+    margin-bottom: 20px;
+}
+
+header .logo {
+    width: 100px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2em;
+    text-shadow: 1px 1px 2px var(--gremio-azul);
+}
+
+.historia {
+    padding: 30px;
+    background-color: #2e2e2e;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    margin-top: 30px;
+}
+
+.historia h2 {
+    font-size: 24px;
+    color: #00a9e0;
+}
+
+.historia p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.back-link-historia {
+    display: inline-block;
+    text-decoration: none;
+    padding: 12px 24px;
+    margin-top: 30px;
+    background-color: var(--gremio-preto);
+    color: #00a9e0;
+    border-radius: 8px;
+    font-weight: bold;
+    margin-bottom: 50px;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.back-link-historia:hover {
+    background-color: var(--gremio-azul);
+    color: var(--gremio-preto);
+    transform: scale(1.2);
+}
+
+.mascote-footer {
+    position: fixed;
+    bottom: 20px;
+    left: -150px;
+    width: 100px;
+    z-index: 1000;
+    animation: cruzarFooter 8s linear forwards;
+    filter: drop-shadow(0 0 10px #00a9e0) drop-shadow(0 0 25px #ffffff);
+    transition: transform 0.3s ease;
+}
+
+.mascote-footer:hover {
+    transform: scale(1.2) rotate(8deg);
+}
+
+@keyframes cruzarFooter {
+    from {
+        left: -150px;
+    }
+    to {
+        left: 100vw;
+    }
+}
+
+
+/* FIM DE HISTORIA.HTML */
+
+/*COMEÇO DE TÍTULOS/*
+/* Estilos gerais do mural de títulos */
+.timeline {
+    position: relative;
+    margin: 40px 0;
+    padding-left: 40px;
+    border-left: 4px solid #007bff;
+  }
+  
+  .timeline-item {
+    position: relative;
+    margin-bottom: 40px;
+    padding-left: 20px;
+  }
+  
+  .timeline-item::before {
+    content: "";
+    position: absolute;
+    left: -12px;
+    top: 5px;
+    width: 20px;
+    height: 20px;
+    background-color: #007bff;
+    border: 3px solid white;
+    border-radius: 50%;
+    z-index: 1;
+  }
+  
+  .timeline-item .year {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #007bff;
+    margin-bottom: 5px;
+    display: block;
+    margin-left: 10px;
+  }
+  
+  .timeline-item .content {
+    background-color: white;
+    padding: 15px 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+    max-width: 600px;
+  }
+  

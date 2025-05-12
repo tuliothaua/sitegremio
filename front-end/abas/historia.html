@@ -1,12 +1,94 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HISTÓRIA DO GRÊMIO</title>
-</head>
-<body>
-    
 
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>História Interativa do Grêmio</title>
+    <link rel="stylesheet" href="/sitegremio/front-end/arquivos/style.css">
+    <link rel="icon" type="image/png" href="/sitegremio/front-end/arquivos/img/gremio-logo-escudo-2.png">
+</head>
+
+<body id="historiabody">
+    <header>
+        <div class="headerbody">
+            <img src="/sitegremio/front-end/arquivos/img/gremio-logo-escudo-2.png" alt="Escudo do Grêmio"
+                class="logo" />
+            <h1>&#10031; História do Grêmio &#10031;</h1>
+        </div>
+    </header>
+
+    <main class="container-historia">
+        <section class="historia">
+            <p>A história do Grêmio Foot-Ball Porto Alegrense (Grêmio) é uma jornada de glórias, superações e momentos
+                inesquecíveis no futebol mundial. Fundado em 15 de setembro de 1903, o clube surgiu com o objetivo de
+                representar a cidade de Porto Alegre, no Rio Grande do Sul, e, ao longo dos anos, se tornou um dos
+                maiores e mais tradicionais clubes do Brasil.</p>
+
+            <h2>Fundação e Primeiros Anos (1903-1920)</h2>
+            <p>O Grêmio foi fundado por um grupo de imigrantes alemães, liderados por Alberto Bins, que criaram o clube
+                com o nome Grêmio Foot-Ball Porto Alegrense. Nos primeiros anos, o clube disputou amistosos e
+                competições regionais, consolidando-se como uma das principais forças do futebol no sul do Brasil. O
+                primeiro título estadual foi conquistado em 1915, e a partir daí o Grêmio se firmou como um dos maiores
+                clubes do estado do Rio Grande do Sul.</p>
+
+            <h2>A Consolidação e Rivalidade com o Internacional (1930-1950)</h2>
+            <p>A década de 1930 foi marcada pela consolidação do Grêmio como uma das potências do futebol gaúcho. A
+                rivalidade com o Sport Club Internacional, o principal adversário da cidade, começou a ganhar força, e
+                as disputas entre os dois clubes passaram a ser intensas, dando origem ao clássico Grenal, um dos
+                maiores confrontos do futebol mundial.</p>
+
+            <h2>A Glória Internacional (1980-1990)</h2>
+            <p>Nos anos 1980, o Grêmio conquistou sua primeira Copa Libertadores da América em 1983, um título histórico
+                que o colocou no cenário internacional. A campanha foi memorável, com grandes atuações de jogadores como
+                Renato Portaluppi, que se tornou um ídolo eterno do clube. O Grêmio derrotou o Peñarol (Uruguai) na
+                final, consagrando-se campeão da América.</p>
+
+            <h2>O Fim da Secura e o Renascimento (1990-2000)</h2>
+            <p>Após um período de altos e baixos, o Grêmio voltou a conquistar títulos expressivos nos anos 1990. Em
+                1994, o clube conquistou a Copa do Brasil, e, em 1996, conquistou o Campeonato Brasileiro, sob o comando
+                de jogadores como Dinho e Paulo Nunes.</p>
+
+            <h2>O Renascimento da Grandeza (2005-2010)</h2>
+            <p>Em 2005, o Grêmio passou por um momento difícil, chegando à Série B do Campeonato Brasileiro. Contudo, o
+                clube se reergueu e, em 2006, conquistou a Copa do Brasil e retornou à Série A com força total. O clube
+                foi reconstruído e passou a ser um dos principais times do Brasil novamente.</p>
+
+            <h2>A Consagração Internacional (2010-2020)</h2>
+            <p>O Grêmio iniciou a década de 2010 com títulos importantes e retornou ao topo do futebol mundial. Em 2017,
+                o clube conquistou novamente a Copa Libertadores da América, vencendo o Lanús (Argentina) na final. A
+                vitória foi histórica, e o time, comandado por Renato Portaluppi, se tornou bicampeão da Libertadores.
+            </p>
+
+            <h2>Era Pós-Libertadores e Reestruturação (2021-2025)</h2>
+            <p>Após a conquista da Libertadores de 2017, o Grêmio viveu alguns altos e baixos, principalmente no cenário
+                brasileiro. A equipe ainda teve algumas boas campanhas, mas enfrentou dificuldades nas temporadas
+                seguintes. Em 2021, o clube foi rebaixado para a Série B do Campeonato Brasileiro, o que marcou um
+                momento difícil para o clube, mas também um processo de reestruturação.</p>
+
+            <h2>O Presente e o Futuro (2025)</h2>
+            <p>Em 2025, o Grêmio segue sendo um dos principais clubes do Brasil, com uma estrutura moderna e uma das
+                maiores torcidas do país. O Estádio Arena do Grêmio, inaugurado em 2012, se consolidou como um dos mais
+                modernos do Brasil. O clube investe fortemente em sua base e na revelação de novos talentos, além de
+                buscar reforços para continuar brigando por títulos nacionais e internacionais.</p>
+        </section> 
+        <a class="back-link-historia" href="/sitegremio/index.html">⬅ Voltar para a Página Inicial</a>
+    </main>
+    <img class="mascote-footer" src="/sitegremio/front-end/arquivos/img/MascoteGremio.png" alt="Mascote do Grêmio"
+        onclick="tocarAudioMascote()">
+    
+        <img class="mascote-footer" src="/sitegremio/front-end/arquivos/img/MascoteGremio.png" alt="Mascote do Grêmio"
+            onclick="tocarAudioMascote()">
+        
+        <audio id="audioMascote">
+            <source src="/sitegremio/front-end/arquivos/aud/super-gremio.mp3" type="audio/mpeg">
+            Seu navegador não suporta a tag de áudio.
+        </audio>
+
+    <footer class="footerlendas">
+        <p>"Grêmio, uma história que nunca acaba."</p>
+    </footer>
+    <script src="/sitegremio/front-end/arquivos/script.js"></script>
 </body>
+
 </html>
