@@ -69,3 +69,11 @@ logoGrêmio.addEventListener("click", function (event) {
     meuAudio2.play();
     } 
 );
+
+//Super gremio
+
+function tocarAudioMascote() {
+    const audio = document.getElementById("audioMascote");
+    audio.currentTime = 0;
+    audio.play().catch((e) => console.error("Erro ao tentar tocar áudio:", e));
+}
