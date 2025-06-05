@@ -23,7 +23,8 @@ playButton.addEventListener("click", function () {
         playButton.textContent = "⏸️ PAUSAR HINO";
         insistiu = 0;
 
-        hero.style.backgroundImage = "url('/sitegremio/front-end/arquivos/gif/torcidagremio.gif')";
+        hero.style.backgroundImage =
+            "url('/sitegremio/front-end/arquivos/gif/torcidagremio.gif')";
         hero.style.backgroundSize = "cover";
         hero.style.backgroundPosition = "center";
     } else {
@@ -49,15 +50,14 @@ playButton.addEventListener("click", function () {
 //GIF MARAVILHOSO
 const gifContainer1 = document.getElementById("gifContainer1");
 
-gifContainer1.addEventListener("click", function(event) {
-    event.preventDefault(); 
+gifContainer1.addEventListener("click", function (event) {
+    event.preventDefault();
 
-    
     gifContainer1.classList.add("active");
 
     setTimeout(() => {
         gifContainer1.classList.remove("active");
-    }, 5000); 
+    }, 5000);
 });
 
 //GREMIOOOOOOOOO
@@ -67,8 +67,7 @@ const logoGrêmio = document.getElementById("gremio1");
 logoGrêmio.addEventListener("click", function (event) {
     event.preventDefault();
     meuAudio2.play();
-    } 
-);
+});
 
 //Super gremio
 
@@ -77,3 +76,31 @@ function tocarAudioMascote() {
     audio.currentTime = 0;
     audio.play().catch((e) => console.error("Erro ao tentar tocar áudio:", e));
 }
+
+
+// Script para filtro dos títulos por categoria
+const filterButtons = document.querySelectorAll('.filter-btn');
+const items = document.querySelectorAll('.gremio-item');
+
+filterButtons.forEach(btn => {
+  btn.addEventListener('click', () => {
+    // Remove active de todos os botões
+    filterButtons.forEach(b => b.classList.remove('active'));
+    // Adiciona active no clicado
+    btn.classList.add('active');
+
+    const filter = btn.getAttribute('data-filter');
+
+    items.forEach(item => {
+      if (filter === 'all') {
+        item.style.display = 'flex';
+      } else {
+        if (item.getAttribute('data-category') === filter) {
+          item.style.display = 'flex';
+        } else {
+          item.style.display = 'none';
+        }
+      }
+    });
+  });
+});
