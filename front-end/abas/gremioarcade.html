@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>GRÊMIO - ARCADE</title>
+    <link rel="icon" type="image/png" href="../arquivos/img/gremio-logo-escudo-2.png" />
+    <link rel="stylesheet" href="../arquivos/style.css">
+</head>
+
+<body class="neonfight-body">
+    <h1 class="neonfight-title">Grêmio <span class="neonfight-glow">Arcade</span></h1>
+
+    <div id="neonfight-game-area">
+        <img id="neonfight-enemy" src="/sitegremio/front-end/arquivos/img/inter-logo.png" alt="Logo do Inter"
+            draggable="false" />
+        <div id="neonfight-score">Kills: 0</div>
+    </div>
+    <video autoplay muted loop playsinline id="bg-video">
+        <source src="/sitegremio/front-end/arquivos/vid/video-arcade.mp4" type="video/mp4" />
+        Seu navegador não suporta vídeo em background.
+    </video>
+      
+    <a class="neonfight-back-btn" href="/sitegremio/index.html">⬅ Voltar para a Página Inicial</a>
+
+    <footer class="neonfight-footer">
+        <p>© 2025 Grêmio Arcade | Feito com 💙 e neon 👾</p>
+    </footer>
+
+    <audio id="audiodetiro" src="/sitegremio/front-end/arquivos/aud/audiodetiro.mp3" preload="none"></audio>
+
+    <script>
+        const enemy = document.getElementById("neonfight-enemy");
+            const scoreDisplay = document.getElementById("neonfight-score");
+            const audioTiro = document.getElementById("audiodetiro");
+            const gameArea = document.getElementById("neonfight-game-area");
+            let score = 0;
+
+            function randomPosition() {
+                const areaWidth = gameArea.clientWidth - enemy.clientWidth;
+                const areaHeight = gameArea.clientHeight - enemy.clientHeight;
+
+                const x = Math.random() * areaWidth;
+                const y = Math.random() * areaHeight;
+
+                enemy.style.left = `${x}px`;
+                enemy.style.top = `${y}px`;
+            }
+
+            enemy.addEventListener("click", () => {
+                score++;
+                scoreDisplay.textContent = `Kills: ${score}`;
+                audioTiro.currentTime = 0;
+                audioTiro.play();
+                randomPosition();
+            });
+
+            setInterval(randomPosition, 1500);
+            randomPosition();
+
+    </script>
+
+
+</body>
+
+</html>

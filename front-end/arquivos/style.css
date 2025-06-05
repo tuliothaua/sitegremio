@@ -1,4 +1,6 @@
+/*****************************/  
 /* INÍCIO DO INDEX.HTML */
+/*****************************/  
 @import url("https://fonts.googleapis.com/css?family=Open+Sans");
 
 * {
@@ -288,9 +290,13 @@ footer a {
     text-decoration: none;
 }
 
+/*****************************/  
 /* FIM DO INDEX.HTML */
+/*****************************/  
 
+/*****************************/  
 /* INÍCIO DO LENDAS.HTML */
+/*****************************/  
 :root {
     --gremio-azul: #0099e5;
     --gremio-preto: #000000;
@@ -458,9 +464,13 @@ h2 {
     height: 200px;
     text-shadow: 1px 1px 3px #000;
 }
+/*****************************/  
 /* FIM DO LENDAS.HTML */
+/*****************************/  
 
+/*****************************/  
 /* INÍCIO DO HISTORIA.HTML */
+/*****************************/  
 
 #historiabody {
     font-family: "Open Sans", sans-serif;
@@ -552,51 +562,170 @@ header h1 {
     }
 }
 
-
+/**************************/  
 /* FIM DE HISTORIA.HTML */
+/**************************/  
 
-/*COMEÇO DE TÍTULOS/*
-/* Estilos gerais do mural de títulos */
-.timeline {
+/*****************************/  
+/* COMEÇO DO JOGO DO GRÊMIO */
+/****************************/  
+
+body.neonfight-body {
+    background: radial-gradient(ellipse at center, #0d0221 0%, #000 100%);
+    font-family: 'Orbitron', sans-serif;
+    text-align: center;
+    padding-top: 30px;
+    margin: 0;
+    color: #00ffff;
+    padding-top: 90px;
+}
+#bg-video {
+    position: fixed; /* fixa no fundo da página */
+    top: 0;
+    left: 0;
+    width: 100vw; /* largura total da viewport */
+    height: 100vh; /* altura total da viewport */
+    object-fit: cover; /* cobre toda a área mantendo proporção */
+    z-index: -1; /* fica atrás de todo conteúdo */
+  }
+  
+
+.neonfight-glow {
+    color: #ff0000;
+    text-shadow: 0 0 10px #ff0000, 0 0 20px;
+}
+
+.neonfight-title {
+    font-size: 2.5rem;
+    color: #00ffff;
+    text-shadow: 0 0 10px #00ffff, 0 0 20px #00ffff;
+    margin-bottom: 0;
+    padding: 15px 0;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1001;
+    background-color: #000011;
+    border-top: 2px solid #00ffff;
+    border-bottom: 2px solid #00ffff;
+    box-shadow: inset 0 0 15px #00ffff44;
+}
+
+
+#neonfight-game-area {
     position: relative;
-    margin: 40px 0;
-    padding-left: 40px;
-    border-left: 4px solid #007bff;
-  }
-  
-  .timeline-item {
-    position: relative;
-    margin-bottom: 40px;
-    padding-left: 20px;
-  }
-  
-  .timeline-item::before {
-    content: "";
-    position: absolute;
-    left: -12px;
-    top: 5px;
-    width: 20px;
-    height: 20px;
-    background-color: #007bff;
-    border: 3px solid white;
-    border-radius: 50%;
-    z-index: 1;
-  }
-  
-  .timeline-item .year {
-    font-size: 1.2em;
-    font-weight: bold;
-    color: #007bff;
-    margin-bottom: 5px;
-    display: block;
-    margin-left: 10px;
-  }
-  
-  .timeline-item .content {
-    background-color: white;
-    padding: 15px 20px;
-    border-radius: 10px;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+    width: 100%;
     max-width: 600px;
-  }
-  
+    height: 500px;
+    border: 2px solid #ff00ff;
+    margin: 40px auto 0;
+    overflow: hidden;
+    background: #110022;
+    border-radius: 12px;
+}
+
+#neonfight-enemy {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    cursor: crosshair;
+    transition: transform 0.1s;
+    user-select: none;
+}
+
+#neonfight-enemy:active {
+    transform: scale(0.9);
+}
+
+#neonfight-score {
+    margin-top: 20px;
+    font-size: 1.2rem;
+    color: #fff;
+    font-weight: bold;
+    text-shadow: 0 0 5px #00ffff;
+}
+
+.neonfight-back-btn {
+    display: inline-block;
+    margin-top: 30px;
+    margin-bottom: 60px;
+    /* espaço para footer */
+    color: #00ffff;
+    text-decoration: none;
+    font-size: 1.1rem;
+    text-shadow: 0 0 5px #00ffff, 0 0 10px #00ffff;
+    border: 2px solid #00ffff;
+    padding: 10px 25px;
+    border-radius: 12px;
+    transition: 0.3s ease-in-out;
+    background-color: transparent;
+}
+
+.neonfight-back-btn:hover {
+    background-color: #00ffff22;
+    box-shadow: 0 0 15px #00ffff, 0 0 30px #00ffff;
+}
+
+.neonfight-footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 15px 0;
+    color: #00ffff;
+    text-align: center;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 1rem;
+    text-shadow: 0 0 5px #00ffff, 0 0 15px #00ffff;
+    border-top: 2px solid #00ffff;
+    background-color: #000011;
+    box-shadow: inset 0 0 15px #00ffff44;
+    user-select: none;
+    z-index: 1000;
+}
+.nav .arcadelink.neon-arcade-link {
+    transition: 
+        color 0.5s,
+        text-shadow 0.7s cubic-bezier(.4,2,.6,1),
+        filter 0.7s cubic-bezier(.4,2,.6,1);
+}
+
+.nav .arcadelink.neon-arcade-link:hover {
+    color: #ff0000;
+    text-shadow: 0 0 18px #ff0000, 0 0 30px #ff0000;
+    font-weight: bold;
+    animation: neonArcadeGlow 2.2s infinite alternate;
+    transition: transform 0.5s ease, filter 0.5s ease;
+    
+}
+
+@keyframes neonArcadeGlow {
+    0% {
+        color: #ff0000;
+        text-shadow: 0 0 18px #ff0000, 0 0 30px #ff0000;
+        filter: drop-shadow(0 0 0px #ff0000);
+    }
+    40% {
+        color: #00ffff;
+        text-shadow: 0 0 22px #00ffff, 0 0 40px #00ffff;
+        filter: drop-shadow(0 0 10px #00ffff);
+        
+    }
+    80% {
+        color: #ff00ff;
+        text-shadow: 0 0 28px #ff00ff, 0 0 60px #ff00ff;
+        filter: drop-shadow(0 0 20px #ff00ff);
+        
+    }
+    100% {
+        color: #ff00ff;
+        text-shadow: 0 0 28px #ff00ff, 0 0 60px #ff00ff;
+        filter: drop-shadow(0 0 20px #ff00ff);
+        
+    }
+}
+
+/*****************************/  
+  /* FIM DO JOGO DO GRÊMIO */
+  /*****************************/  

@@ -2,151 +2,255 @@
 <html lang="pt-br">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Títulos do Grêmio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="stylesheet" href="/sitegremio/front-end/arquivos/style.css">
   <link rel="icon" type="image/png" href="/sitegremio/front-end/arquivos/img/gremio-logo-escudo-2.png">
 </head>
-<body class="titulosbody">
+  <title>Títulos do Grêmio - Linha do Tempo</title>
+<body>
 
-    <div class="timeline">
+  <h1 class="gremio-header">🏆 Títulos do Grêmio</h1>
 
-        <!-- INTERNACIONAIS -->
-        <div class="category-title">🏆 Títulos Internacionais</div>
-      
-        <div class="timeline-item">
-          <span class="year">1983</span>
-          <div class="content">
-            <h3>Copa Libertadores da América</h3>
-            <p>Primeira conquista continental, com Renato como grande destaque.</p>
-          </div>
-        </div>
-      
-        <div class="timeline-item">
-          <span class="year">1983</span>
-          <div class="content">
-            <h3>Mundial Interclubes</h3>
-            <p>Vitória por 2x1 sobre o Hamburgo no Japão. Renato marcou dois gols históricos.</p>
-          </div>
-        </div>
-      
-        <div class="timeline-item">
-          <span class="year">1995</span>
-          <div class="content">
-            <h3>Copa Libertadores da América</h3>
-            <p>Danrlei, Arce, Jardel e Paulo Nunes brilharam na campanha da segunda Libertadores.</p>
-          </div>
-        </div>
-      
-        <div class="timeline-item">
-          <span class="year">2017</span>
-          <div class="content">
-            <h3>Copa Libertadores da América</h3>
-            <p>Com Renato como técnico, o Grêmio conquista a América pela terceira vez. Luan foi eleito craque da competição.</p>
-          </div>
-        </div>
-      
-        <div class="timeline-item">
-          <span class="year">2018</span>
-          <div class="content">
-            <h3>Recopa Sul-Americana</h3>
-            <p>Conquistada contra o Independiente da Argentina, nos pênaltis.</p>
-          </div>
-        </div>
-      
-        <!-- NACIONAIS -->
-        <div class="category-title">🇧🇷 Títulos Nacionais</div>
-      
-        <div class="timeline-item">
-          <span class="year">1981</span>
-          <div class="content">
-            <h3>Campeonato Brasileiro</h3>
-            <p>Primeira conquista nacional, com gol de Baltazar na final contra o São Paulo.</p>
-          </div>
-        </div>
-      
-        <div class="timeline-item">
-          <span class="year">1996</span>
-          <div class="content">
-            <h3>Campeonato Brasileiro</h3>
-            <p>Time comandado por Luiz Felipe Scolari, com Jardel e Paulo Nunes no ataque.</p>
-          </div>
-        </div>
-      
-        <div class="timeline-item">
-          <span class="year">1989</span>
-          <div class="content">
-            <h3>Copa do Brasil</h3>
-            <p>Primeiro título da Copa do Brasil, vencendo o Sport na decisão.</p>
-          </div>
-        </div>
-      
-        <div class="timeline-item">
-          <span class="year">1994</span>
-          <div class="content">
-            <h3>Copa do Brasil</h3>
-            <p>Vitória sobre o Ceará, mantendo o Grêmio como potência nacional da década.</p>
-          </div>
-        </div>
-      
-        <div class="timeline-item">
-          <span class="year">1997</span>
-          <div class="content">
-            <h3>Copa do Brasil</h3>
-            <p>Conquista em cima do Flamengo, com gol de Carlos Miguel no Maracanã.</p>
-          </div>
-        </div>
-      
-        <div class="timeline-item">
-          <span class="year">2001</span>
-          <div class="content">
-            <h3>Copa do Brasil</h3>
-            <p>Grande campanha comandada por Tite, vencendo o Corinthians na final.</p>
-          </div>
-        </div>
-      
-        <div class="timeline-item">
-          <span class="year">2016</span>
-          <div class="content">
-            <h3>Copa do Brasil</h3>
-            <p>Renato de volta ao comando e fim do jejum de títulos nacionais.</p>
-          </div>
-        </div>
-      
-        <!-- ESTADUAIS -->
-        <div class="category-title">⚪⚫🔵 Títulos Estaduais (Gauchão)</div>
-      
-        <div class="timeline-item">
-          <span class="year">1931</span>
-          <div class="content">
-            <h3>1º Campeonato Gaúcho</h3>
-            <p>Primeira taça estadual do Grêmio, superando rivais da capital.</p>
-          </div>
-        </div>
-      
-        <div class="timeline-item">
-          <span class="year">1980</span>
-          <div class="content">
-            <h3>Gauchão invicto</h3>
-            <p>Time campeão sem derrotas, com Baltazar e Leão como destaques.</p>
-          </div>
-        </div>
-      
-        <div class="timeline-item">
-          <span class="year">2018</span>
-          <div class="content">
-            <h3>Campeão Gaúcho</h3>
-            <p>Equipe alternativa garantiu o título sobre o Brasil de Pelotas.</p>
-          </div>
-        </div>
-      
-        <div class="timeline-item">
-          <span class="year">2023</span>
-          <div class="content">
-            <h3>42º Título Gaúcho</h3>
-            <p>Maior campeão estadual do RS, vencendo o Caxias nos pênaltis.</p>
-          </div>
-        </div>
-      
+  <div class="gremio-filters">
+    <button class="filter-btn active" data-filter="all">Todos</button>
+    <button class="filter-btn" data-filter="internacionais">Internacionais</button>
+    <button class="filter-btn" data-filter="nacionais">Nacionais</button>
+    <button class="filter-btn" data-filter="estaduais">Estaduais</button>
+  </div>
+
+  <div class="gremio-timeline">
+
+    <!-- INTERNACIONAIS -->
+    <div class="gremio-item" data-category="internacionais">
+      <span class="gremio-year">1983</span>
+      <svg class="gremio-trophy" viewBox="0 0 24 24"><path fill="#FFD700" d="M12 2L15 8H9L12 2Z M6 8L18 8V10L6 10V8Z M5 10H19L16 21H8L5 10Z"/></svg>
+      <div>
+        <div class="gremio-title">Copa Libertadores da América</div>
+        <div class="gremio-desc">Primeira conquista continental, com Renato como grande destaque.</div>
       </div>
-    </body>      
+    </div>
+
+    <div class="gremio-item" data-category="internacionais">
+      <span class="gremio-year">1983</span>
+      <svg class="gremio-trophy" viewBox="0 0 24 24"><path fill="#FFD700" d="M12 2L15 8H9L12 2Z M6 8L18 8V10L6 10V8Z M5 10H19L16 21H8L5 10Z"/></svg>
+      <div>
+        <div class="gremio-title">Mundial Interclubes</div>
+        <div class="gremio-desc">Vitória por 2x1 sobre o Hamburgo no Japão. Renato marcou dois gols históricos.</div>
+      </div>
+    </div>
+
+    <div class="gremio-item" data-category="internacionais">
+      <span class="gremio-year">1995</span>
+      <svg class="gremio-trophy" viewBox="0 0 24 24"><path fill="#FFD700" d="M12 2L15 8H9L12 2Z M6 8L18 8V10L6 10V8Z M5 10H19L16 21H8L5 10Z"/></svg>
+      <div>
+        <div class="gremio-title">Copa Libertadores da América</div>
+        <div class="gremio-desc">Danrlei, Arce, Jardel e Paulo Nunes brilharam na campanha da segunda Libertadores.</div>
+      </div>
+    </div>
+
+    <div class="gremio-item" data-category="internacionais">
+      <span class="gremio-year">2017</span>
+      <svg class="gremio-trophy" viewBox="0 0 24 24"><path fill="#FFD700" d="M12 2L15 8H9L12 2Z M6 8L18 8V10L6 10V8Z M5 10H19L16 21H8L5 10Z"/></svg>
+      <div>
+        <div class="gremio-title">Copa Libertadores da América</div>
+        <div class="gremio-desc">Com Renato como técnico, o Grêmio conquista a América pela terceira vez. Luan foi eleito craque da competição.</div>
+      </div>
+    </div>
+
+    <div class="gremio-item" data-category="internacionais">
+      <span class="gremio-year">2018</span>
+      <svg class="gremio-trophy" viewBox="0 0 24 24"><path fill="#FFD700" d="M12 2L15 8H9L12 2Z M6 8L18 8V10L6 10V8Z M5 10H19L16 21H8L5 10Z"/></svg>
+      <div>
+        <div class="gremio-title">Recopa Sul-Americana</div>
+        <div class="gremio-desc">Conquistada contra o Independiente da Argentina, nos pênaltis.</div>
+      </div>
+    </div>
+
+    <!-- NACIONAIS -->
+    <div class="gremio-item" data-category="nacionais">
+      <span class="gremio-year">1981</span>
+      <svg class="gremio-trophy" viewBox="0 0 24 24"><path fill="#ffd700" d="M12 2L15 8H9L12 2Z M6 8L18 8V10L6 10V8Z M5 10H19L16 21H8L5 10Z"/></svg>
+      <div>
+        <div class="gremio-title">Campeonato Brasileiro</div>
+        <div class="gremio-desc">Primeira conquista nacional, com gol de Baltazar na final contra o São Paulo.</div>
+      </div>
+    </div>
+
+    <div class="gremio-item" data-category="nacionais">
+      <span class="gremio-year">1996</span>
+      <svg class="gremio-trophy" viewBox="0 0 24 24"><path fill="#ffd700" d="M12 2L15 8H9L12 2Z M6 8L18 8V10L6 10V8Z M5 10H19L16 21H8L5 10Z"/></svg>
+      <div>
+        <div class="gremio-title">Campeonato Brasileiro</div>
+        <div class="gremio-desc">Time comandado por Luiz Felipe Scolari, com Jardel e Paulo Nunes no ataque.</div>
+      </div>
+    </div>
+
+    <div class="gremio-item" data-category="nacionais">
+      <span class="gremio-year">1989</span>
+      <svg class="gremio-trophy" viewBox="0 0 24 24"><path fill="#ffd700" d="M12 2L15 8H9L12 2Z M6 8L18 8V10L6 10V8Z M5 10H19L16 21H8L5 10Z"/></svg>
+      <div>
+        <div class="gremio-title">Copa do Brasil</div>
+        <div class="gremio-desc">Primeiro título da Copa do Brasil, vencendo o Sport na decisão.</div>
+      </div>
+    </div>
+
+    <div class="gremio-item" data-category="nacionais">
+      <span class="gremio-year">1994</span>
+      <svg class="gremio-trophy" viewBox="0 0 24 24"><path fill="#ffd700" d="M12 2L15 8H9L12 2Z M6 8L18 8V10L6 10V8Z M5 10H19L16 21H8L5 10Z"/></svg>
+      <div>
+        <div class="gremio-title">Copa do Brasil</div>
+        <div class="gremio-desc">Vitória sobre o Ceará, mantendo o Grêmio como potência nacional da década.</div>
+      </div>
+    </div>
+
+    <div class="gremio-item" data-category="nacionais">
+      <span class="gremio-year">1997</span>
+      <svg class="gremio-trophy" viewBox="0 0 24 24"><path fill="#ffd700" d="M12 2L15 8H9L12 2Z M6 8L18 8V10L6 10V8Z M5 10H19L16 21H8L5 10Z"/></svg>
+      <div>
+        <div class="gremio-title">Copa do Brasil</div>
+        <div class="gremio-desc">Conquista em cima do Flamengo, com gol de Carlos Miguel no Maracanã.</div>
+      </div>
+    </div>
+
+    <div class="gremio-item" data-category="nacionais">
+      <span class="gremio-year">2001</span>
+      <svg class="gremio-trophy" viewBox="0 0 24 24"><path fill="#ffd700" d="M12 2L15 8H9L12 2Z M6 8L18 8V10L6 10V8Z M5 10H19L16 21H8L5 10Z"/></svg>
+      <div>
+        <div class="gremio-title">Copa do Brasil</div>
+        <div class="gremio-desc">Grande campanha comandada por Tite, vencendo o Corinthians na final.</div>
+      </div>
+    </div>
+
+    <div class="gremio-item" data-category="nacionais">
+      <span class="gremio-year">2016</span>
+      <svg class="gremio-trophy" viewBox="0 0 24 24"><path fill="#ffd700" d="M12 2L15 8H9L12 2Z M6 8L18 8V10L6 10V8Z M5 10H19L16 21H8L5 10Z"/></svg>
+      <div>
+        <div class="gremio-title">Copa do Brasil</div>
+        <div class="gremio-desc">Renato de volta ao comando e fim do jejum de títulos nacionais.</div>
+      </div>
+    </div>
+
+    <!-- ESTADUAIS -->
+    <div class="gremio-item" data-category="estaduais">
+      <span class="gremio-year">1931</span>
+      <svg class="gremio-trophy" viewBox="0 0 24 24"><path fill="#ffd700" d="M12 2L15 8H9L12 2Z M6 8L18 8V10L6 10V8Z M5 10H19L16 21H8L5 10Z"/></svg>
+      <div>
+        <div class="gremio-title">1º Campeonato Gaúcho</div>
+        <div class="gremio-desc">Primeira taça estadual do Grêmio, superando rivais da capital.</div>
+      </div>
+    </div>
+
+    <div class="gremio-item" data-category="estaduais">
+      <span class="gremio-year">1980</span>
+      <svg class="gremio-trophy" viewBox="0 0 24 24"><path fill="#ffd700" d="M12 2L15 8H9L12 2Z M6 8L18 8V10L6 10V8Z M5 10H19L16 21H8L5 10Z"/></svg>
+      <div>
+        <div class="gremio-title">Campeonato Gaúcho</div>
+        <div class="gremio-desc">Fase de domínio estadual que antecedeu os títulos nacionais e internacionais.</div>
+      </div>
+    </div>
+
+    <div class="gremio-item" data-category="estaduais">
+      <span class="gremio-year">1989</span>
+      <svg class="gremio-trophy" viewBox="0 0 24 24"><path fill="#ffd700" d="M12 2L15 8H9L12 2Z M6 8L18 8V10L6 10V8Z M5 10H19L16 21H8L5 10Z"/></svg>
+      <div>
+        <div class="gremio-title">Campeonato Gaúcho</div>
+        <div class="gremio-desc">Título estadual conquistado na reta que antecedeu o bicampeonato brasileiro.</div>
+      </div>
+    </div>
+
+    <div class="gremio-item" data-category="estaduais">
+      <span class="gremio-year">1990</span>
+      <svg class="gremio-trophy" viewBox="0 0 24 24"><path fill="#ffd700" d="M12 2L15 8H9L12 2Z M6 8L18 8V10L6 10V8Z M5 10H19L16 21H8L5 10Z"/></svg>
+      <div>
+        <div class="gremio-title">Campeonato Gaúcho</div>
+        <div class="gremio-desc">Conquista seguida do título estadual de 1989.</div>
+      </div>
+    </div>
+
+    <div class="gremio-item" data-category="estaduais">
+      <span class="gremio-year">1991</span>
+      <svg class="gremio-trophy" viewBox="0 0 24 24"><path fill="#ffd700" d="M12 2L15 8H9L12 2Z M6 8L18 8V10L6 10V8Z M5 10H19L16 21H8L5 10Z"/></svg>
+      <div>
+        <div class="gremio-title">Campeonato Gaúcho</div>
+        <div class="gremio-desc">Sequência estadual que acompanhou os anos 90 de sucesso.</div>
+      </div>
+    </div>
+
+    <div class="gremio-item" data-category="estaduais">
+      <span class="gremio-year">1993</span>
+      <svg class="gremio-trophy" viewBox="0 0 24 24"><path fill="#ffd700" d="M12 2L15 8H9L12 2Z M6 8L18 8V10L6 10V8Z M5 10H19L16 21H8L5 10Z"/></svg>
+      <div>
+        <div class="gremio-title">Campeonato Gaúcho</div>
+        <div class="gremio-desc">Último título estadual antes da segunda Libertadores.</div>
+      </div>
+    </div>
+
+    <div class="gremio-item" data-category="estaduais">
+      <span class="gremio-year">1995</span>
+      <svg class="gremio-trophy" viewBox="0 0 24 24"><path fill="#ffd700" d="M12 2L15 8H9L12 2Z M6 8L18 8V10L6 10V8Z M5 10H19L16 21H8L5 10Z"/></svg>
+      <div>
+        <div class="gremio-title">Campeonato Gaúcho</div>
+        <div class="gremio-desc">Ano da segunda Libertadores, Grêmio campeão estadual.</div>
+      </div>
+    </div>
+
+    <div class="gremio-item" data-category="estaduais">
+      <span class="gremio-year">1999</span>
+      <svg class="gremio-trophy" viewBox="0 0 24 24"><path fill="#ffd700" d="M12 2L15 8H9L12 2Z M6 8L18 8V10L6 10V8Z M5 10H19L16 21H8L5 10Z"/></svg>
+      <div>
+        <div class="gremio-title">Campeonato Gaúcho</div>
+        <div class="gremio-desc">Fim da década de 90 com mais um estadual conquistado.</div>
+      </div>
+    </div>
+
+    <div class="gremio-item" data-category="estaduais">
+      <span class="gremio-year">2001</span>
+      <svg class="gremio-trophy" viewBox="0 0 24 24"><path fill="#ffd700" d="M12 2L15 8H9L12 2Z M6 8L18 8V10L6 10V8Z M5 10H19L16 21H8L5 10Z"/></svg>
+      <div>
+        <div class="gremio-title">Campeonato Gaúcho</div>
+        <div class="gremio-desc">Ano do título estadual junto à conquista da Copa do Brasil.</div>
+      </div>
+    </div>
+
+    <div class="gremio-item" data-category="estaduais">
+      <span class="gremio-year">2006</span>
+      <svg class="gremio-trophy" viewBox="0 0 24 24"><path fill="#ffd700" d="M12 2L15 8H9L12 2Z M6 8L18 8V10L6 10V8Z M5 10H19L16 21H8L5 10Z"/></svg>
+      <div>
+        <div class="gremio-title">Campeonato Gaúcho</div>
+        <div class="gremio-desc">Grêmio voltou a dominar o estadual na década de 2000.</div>
+      </div>
+    </div>
+
+    <div class="gremio-item" data-category="estaduais">
+      <span class="gremio-year">2007</span>
+      <svg class="gremio-trophy" viewBox="0 0 24 24"><path fill="#ffd700" d="M12 2L15 8H9L12 2Z M6 8L18 8V10L6 10V8Z M5 10H19L16 21H8L5 10Z"/></svg>
+      <div>
+        <div class="gremio-title">Campeonato Gaúcho</div>
+        <div class="gremio-desc">Conquista estadual consecutiva.</div>
+      </div>
+    </div>
+
+    <div class="gremio-item" data-category="estaduais">
+      <span class="gremio-year">2010</span>
+      <svg class="gremio-trophy" viewBox="0 0 24 24"><path fill="#ffd700" d="M12 2L15 8H9L12 2Z M6 8L18 8V10L6 10V8Z M5 10H19L16 21H8L5 10Z"/></svg>
+      <div>
+        <div class="gremio-title">Campeonato Gaúcho</div>
+        <div class="gremio-desc">Grêmio inicia década com mais um estadual.</div>
+      </div>
+    </div>
+
+    <div class="gremio-item" data-category="estaduais">
+      <span class="gremio-year">2024</span>
+      <svg class="gremio-trophy" viewBox="0 0 24 24"><path fill="#ffd700" d="M12 2L15 8H9L12 2Z M6 8L18 8V10L6 10V8Z M5 10H19L16 21H8L5 10Z"/></svg>
+      <div>
+        <div class="gremio-title">Campeonato Gaúcho</div>
+        <div class="gremio-desc">Último estadual até agora<div>
+      </div>
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
