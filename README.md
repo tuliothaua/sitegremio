@@ -34,5 +34,5 @@ Bem-vindo ao **GrÃªmio History Hub**, um site dedicado a contar a gloriosa histÃ
 
 2. Site Direto:
   ```bash
-site -- https://tuliothaua.github.io/sitegremio/  
+  site -- https://tuliothaua.github.io/sitegremio/  
   ```
