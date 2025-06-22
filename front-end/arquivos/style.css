@@ -566,6 +566,210 @@ header h1 {
 /* FIM DE HISTORIA.HTML */
 /**************************/  
 
+/**************************/  
+/* INÍCIO DE TITULO.HTML */
+/**************************/  
+
+  /* ===== Paleta Grêmio ===== */
+  :root {
+    --azul-gremio: #009de0;
+    --preto-gremio: #000000;
+    --branco: #ffffff;
+    --cinza-claro: #f9f9f9;
+    --cinza-escuro: #333333;
+    --dourado: #ffd700;
+  }
+  
+  /* ===== Body geral ===== */
+.titulos-body {
+    background: linear-gradient(
+      135deg,
+      rgba(0, 0, 0, 0.8),
+      rgba(0, 157, 224, 0.8),
+      rgba(0, 0, 0, 0.8)
+    );
+    color: var(--preto-gremio);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.5;
+  }
+  
+  /* ===== Header ===== */
+  .gremio-header {
+    text-align: center;
+    color: var(--azul-gremio);
+    font-size: 3.5rem;
+    font-weight: 900;
+    padding: 30px;
+    background-color: #2e2e2e;
+    border-bottom: 5px solid var(--azul-gremio);
+    padding-bottom: 12px;
+    text-shadow: 1px 1px 3px rgba(0, 157, 224, 0.7);
+    letter-spacing: 2px;
+    
+    background-color: rgba(0, 0, 0, 0.85);
+    color: var(--gremio-branco);
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* ===== Botões de Filtro ===== */
+  .gremio-filters {
+    display: flex;
+    justify-content: center;
+    gap: 18px;
+    margin-bottom: 40px;
+    flex-wrap: wrap;
+  }
+  
+  .filter-btn {
+    background-color: var(--azul-gremio);
+    color: var(--branco);
+    border: none;
+    padding: 12px 28px;
+    cursor: pointer;
+    border-radius: 25px;
+    font-weight: 700;
+    font-size: 1rem;
+    box-shadow: 0 6px 10px rgba(0, 157, 224, 0.4);
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    user-select: none;
+  }
+  
+  .filter-btn:hover {
+    background-color: var(--preto-gremio);
+    transform: translateY(-3px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.6);
+  }
+  
+  .filter-btn.active {
+    background-color: var(--preto-gremio);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.7);
+  }
+  
+  /* ===== Linha do tempo ===== */
+  .gremio-timeline {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    max-width: 900px;
+    margin: 0 auto;
+    padding-bottom: 60px;
+  }
+  
+  /* ===== Item da timeline ===== */
+  .gremio-item {
+    background-color: var(--cinza-claro);
+    border-left: 10px solid var(--azul-gremio);
+    border-radius: 12px;
+    padding: 18px 25px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: default;
+  }
+  
+  .gremio-item:hover {
+    transform: scale(1.04);
+    box-shadow: 0 8px 24px rgba(0, 157, 224, 0.35);
+  }
+  
+  /* ===== Ano ===== */
+  .gremio-year {
+    font-weight: 900;
+    color: var(--azul-gremio);
+    font-size: 1.7rem;
+    min-width: 70px;
+    text-shadow: 0 0 6px rgba(0, 157, 224, 0.8);
+    user-select: none;
+  }
+  
+  /* ===== Troféu ===== */
+  .gremio-trophy {
+    width: 34px;
+    height: 34px;
+    filter: drop-shadow(0 0 3px var(--azul-gremio));
+    user-select: none;
+  }
+  
+  /* ===== Título do evento ===== */
+  .gremio-title {
+    font-weight: 700;
+    font-size: 1.3rem;
+    color: var(--preto-gremio);
+    user-select: text;
+  }
+  
+  /* ===== Responsividade ===== */
+  @media (max-width: 600px) {
+    .gremio-item {
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 15px 20px;
+    }
+  
+    .gremio-year {
+      font-size: 1.5rem;
+    }
+  
+    .gremio-trophy {
+      width: 28px;
+      height: 28px;
+    }
+  
+    .gremio-title {
+      font-size: 1.1rem;
+    }
+  
+    .gremio-desc {
+      font-size: 0.9rem;
+    }
+  }
+
+.back-link-titulos {
+    display: inline-block;
+    margin-top: 30px;
+    text-decoration: none;
+    padding: 12px 24px;
+    background-color: var(--gremio-preto);
+    color: var(--gremio-branco);
+    border-radius: 8px;
+    font-weight: bold;
+    transition: background 0.3s ease, transform 0.2s ease;
+    margin-bottom: 50px;
+}
+
+.back-link-titulos:hover {
+    background: #525e63;
+    transform: scale(1.2);
+}
+
+.back-link-titulos:hover {
+    background-color: var(--gremio-azul);
+    color: var(--gremio-preto);
+}
+
+.footer-titulos {
+        background-color: rgba(0, 0, 0, 0.9);
+        color: white;
+        text-align: center;
+        padding: 20px;
+        margin-top: 40px;
+}
+    
+.footer-titulos p {
+        margin: 0;
+        font-weight: bold;
+        font-size: 1.2em;
+}
+    
+
+/**************************/  
+/* FIM DE TITULO.HTML */
+/**************************/  
+
 /*****************************/  
 /* COMEÇO DO JOGO DO GRÊMIO */
 /****************************/  

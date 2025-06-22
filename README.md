@@ -29,4 +29,11 @@ Bem-vindo ao **Grêmio History Hub**, um site dedicado a contar a gloriosa hist�
 
 1. Clone o repositório:
    ```bash
-   git clone https://github.com/tuliothaua/sitegremio.git
+   git clone https://github.com/tuliothaua/sitegremio.git 
+   ```
+
+2. Site Direto:
+  ```bash
+site -- https://tuliothaua.github.io/sitegremio/  
+  ```
+
