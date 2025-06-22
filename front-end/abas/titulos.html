@@ -7,7 +7,7 @@
   <link rel="icon" type="image/png" href="/sitegremio/front-end/arquivos/img/gremio-logo-escudo-2.png">
 </head>
   <title>Títulos do Grêmio - Linha do Tempo</title>
-<body>
+<body class="titulos-body">
 
   <h1 class="gremio-header">🏆 Títulos do Grêmio</h1>
 
@@ -250,7 +250,43 @@
 
   </div>
 
-  <script src="script.js"></script>
+  </div>
+  <a class="back-link-titulos" href="/sitegremio/index.html">⬅ Voltar para a Página Inicial</a>
+
+<footer class="footer-titulos">
+  <p>Glórias eternas do Grêmio em cada conquista!</p>
+</footer>
+
+  <script>
+    // Seleciona os botões de filtro e os itens
+      const filterButtons = document.querySelectorAll(".filter-btn");
+      const items = document.querySelectorAll(".gremio-item");
+
+      filterButtons.forEach(button => {
+        button.addEventListener("click", () => {
+          // Remove a classe active dos botões
+          filterButtons.forEach(btn => btn.classList.remove("active"));
+          // Marca o botão clicado como ativo
+          button.classList.add("active");
+
+          const filter = button.getAttribute("data-filter");
+
+          items.forEach(item => {
+            // Se filtro é "all", mostra todos
+            if (filter === "all") {
+              item.style.display = "flex"; // ou "block", depende do seu CSS
+            } else {
+              // mostra só os que tem data-category igual ao filtro
+              if (item.getAttribute("data-category") === filter) {
+                item.style.display = "flex";
+              } else {
+                item.style.display = "none";
+              }
+            }
+          });
+        });
+      });
+  </script>
 </body>
 </html>
 
