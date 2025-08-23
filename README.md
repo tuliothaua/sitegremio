@@ -1,6 +1,6 @@
 # 🟦 GREMIO HISTORY HUB 🏆
 
-Bem-vindo ao **Grêmio History Hub**, um site dedicado a contar a gloriosa história do **Grêmio Foot-Ball Porto Alegrense**. Aqui você encontrará uma linha do tempo interativa com os momentos marcantes do clube, perfis de lendas tricolores, conquistas inesquecíveis ao longo das décadas.
+Bem-vindo ao **Grêmio History Hub**, um site dedicado a contar a gloriosa história do **Grêmio Foot-Ball Porto Alegrense**, Aqui você encontrará uma linha do tempo interativa com os momentos marcantes do clube, perfis de lendas tricolores, conquistas inesquecíveis ao longo das décadas.
 
 ## 📚 Funcionalidades do Site
 
